@@ -32,6 +32,12 @@ To get a brief overview of Bootstrap 4, find the presentation attached to the re
       <div class="clearfix"></div>
       
  ```
+ By now, your Website should look like this:
+ 
+ 
+ ![alt text](https://github.com/Toaster996/Bootstrap4Demo/blob/master/pictures/align.PNG "Align Text")
+ 
+ 
 5. The unique thing about Bootstrap is the Bootstrap Grid System. In the presentation, you'll find further details, but simply said, it looks at a Website as a 12-col Grid. With the class of `row`, you can start this grid.
 ```html
 <div class="row">
@@ -56,6 +62,10 @@ An example Jumbotron could look like this:
           </div>
         </div>
 ```
+
+Your Jumbotron in the End should lokk similar to this:
+ 
+ ![alt text](https://github.com/Toaster996/Bootstrap4Demo/blob/master/pictures/jumbotron.PNG "Jumbotron")
 
 8. In todays Webistes, Buttons are really important. Therefore, Bootstrap has a bunch of Buttonclasses. The basic Buttonclass is `btn`, but you can modyfiy it using `btn-primary` or `btn-secondary`. Bootstrap4 introduced the outline-buttons. You can use them in the same way, `btn-outline-primary`. 
 Examples would look like this
@@ -88,3 +98,23 @@ Examples would look like this
 <button type="button" class="btn btn-outline-warning">Warning</button>
 <button type="button" class="btn btn-outline-danger">Danger</button>
 ```
+
+9. Another important element is the page-footer. Therefore, we use the tag `<footer class="footer bg-dark">` with the class of footer. We can also use the bg-class just like in every other element, to change the background-color. 
+Inside this footer, we need several divs. To make the footer, we need the container and a grid system with only one columm. The `text-center` class is the one you already used to align text. 
+```html
+ <footer class="footer bg-dark mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-light p-4">
+            Contact Us!
+          </div>
+        </div>
+      </div>
+    </footer>
+```
+You footer should look like this:
+ 
+ ![alt text](https://github.com/Toaster996/Bootstrap4Demo/blob/master/pictures/footer.PNG "Footer")
+ 
+One interesting point in this footer are the classes `p-4` and `mt-3`. Those are new Bootstrap4 Classes. To mave a padding or margin around an element, you can just wirte `p-[1-5]` vor padding and `m-[1-5]` for margin. You might also need the ability to only add paddings or margins add the top, right, bootom or left. Therefore, you can use classes like `mt-3`, which adds a margin of 3 at the top.
+
